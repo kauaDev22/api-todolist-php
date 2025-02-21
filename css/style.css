@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(253, 193, 124), hsl(59, 100%, 81%));
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+form {
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Updated box-shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"],
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+div.lista {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 22.3%; /* Increased width */
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Updated box-shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+div.lista li.concluida {
+    font-size: 25px; /* Increased font size */
+    color: green;
+    text-decoration: line-through;
+}
+
+.lista li {
+    padding: 15px; /* Increased padding */
+    font-size: 25px; /* Increased font size */
+    border-bottom: 1px solid #eee;
+    width: 100%; /* Ensure full width */
+    text-align: center; /* Center text */
+}
+
+.lista li:last-child {
+    border-bottom: none;
+}
+
+.lista a {
+    padding: 10px;
+    font-size: 20px; /* Increased font size */
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.lista a:hover {
+    text-decoration: underline;
+}

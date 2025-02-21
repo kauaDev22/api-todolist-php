@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS tarefas;
+
+
+IF NOT EXISTS CREATE TABLE `tarefas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `descricao` varchar(255) DEFAULT NULL,
+  `concluida` int(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
